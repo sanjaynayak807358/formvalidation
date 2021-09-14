@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+/* for Defalut browser size adjustment*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*adding style property on body tag*/
+body {
+  background-image: url("b.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+.container {
+  background-color: rgb(115, 226, 198);
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.34),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+  overflow: hidden;
+  width: calc(100vw-65vw);
+  max-width: 100%;
+}
+.header {
+  border-bottom: 0.1px solid #f0f0f0;
+  background-color: #09dada;
+  padding: 10px 4px;
+}
+.header h2 {
+  margin: 0;
+}
+.form {
+  padding: 40px;
+}
+.form-control {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: medium;
+}
+.form-control input {
+  width: 400px;
+  border: 5px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 5px;
+}
+.formc-ontrol input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.form-control.success input {
+  border-color: #2e7c2e;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control i {
+  position: absolute;
+  right: 12px;
+  top: 35px;
+  visibility: hidden;
+}
+.form-control.success i.fa-check-circle {
+  color: #2e7c2e;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form .btn {
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: rgb(16, 88, 94);
+  display: block;
+  font-size: 16px;
+  padding: 10px 0;
+  margin-top: auto;
+  width: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  background: #1298d6f1;
+}
+.btn:hover {
+  background-color: aqua;
+}
